@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#e11d22">
+<title>ММК — Ministry of Beautiful People</title>
+<style>
+:root{
+  --red:#df1f26; --black:#111; --paper:#f3f1eb; --line:#171717;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--black);
+  font-family:Arial,Helvetica,sans-serif;
+  overflow-x:hidden;
+}
+img{display:block;width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:900px;margin:auto}
+.topbar{
+  position:sticky;top:0;z-index:20;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 16px;border-bottom:1px solid #222;
+  background:rgba(243,241,235,.92);backdrop-filter:blur(10px);
+  font-size:11px;letter-spacing:.08em;text-transform:uppercase
+}
+.hero{
+  min-height:92vh;background:var(--red);color:#111;
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:26px 18px 18px;
+}
+.hero h1{
+  font-size:clamp(54px,14vw,140px);line-height:.82;
+  letter-spacing:-.07em;margin:0;font-weight:900;text-transform:uppercase;
+}
+.hero .plus{display:inline-block;font-size:.8em}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:14px;border-top:1px solid #111;padding-top:14px}
+.meta p{margin:0;font-size:13px;line-height:1.2}
+.enter{
+  margin-top:24px;border:1px solid #111;padding:15px 16px;
+  display:flex;justify-content:space-between;font-weight:800;
+  text-transform:uppercase;letter-spacing:.08em;
+}
+.section{padding:58px 18px}
+.kicker{font-size:11px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:10px}
+h2{font-size:clamp(36px,9vw,78px);line-height:.9;letter-spacing:-.055em;margin:0 0 30px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{border-top:1px solid #111;padding-top:9px}
+.card .num{font-size:11px;margin-bottom:8px}
+.card img{aspect-ratio:1/1;object-fit:cover;background:#fff}
+.card h3{font-size:15px;margin:9px 0 3px}
+.card p{font-size:11px;margin:0 0 18px;opacity:.72}
+.full{grid-column:1/-1}
+.full img{aspect-ratio:auto}
+.redblock{
+  background:var(--red);padding:34px 18px;margin:0 18px;
+}
+.redblock h2{margin-bottom:24px}
+.redblock p{max-width:520px;font-size:16px;line-height:1.18}
+.marquee{
+  border-top:1px solid #111;border-bottom:1px solid #111;
+  overflow:hidden;white-space:nowrap;margin-top:36px;padding:12px 0;
+  font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+}
+.marquee span{display:inline-block;padding-right:40px}
+.editorial{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.editorial img{aspect-ratio:1/1;object-fit:cover}
+.about{border-top:1px solid #111;margin-top:30px;padding-top:16px}
+.about .big{font-size:clamp(28px,7vw,58px);line-height:.92;letter-spacing:-.05em;font-weight:900}
+.footer{padding:45px 18px 70px;font-size:11px;line-height:1.35}
+button{
+  width:100%;border:1px solid #111;background:#111;color:#fff;
+  padding:14px;text-transform:uppercase;font-weight:800;letter-spacing:.08em;
+}
+@media(min-width:700px){
+  .section{padding:90px 28px}.hero{padding:36px 28px}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .editorial{grid-template-columns:repeat(3,1fr)}
+  .redblock{margin:0 28px;padding:55px 28px}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <span>ММК / CC 2026</span><span>MINISTRY OF BEAUTIFUL PEOPLE</span>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div>
+    <div class="kicker">сс 2026 / by pretty princess</div>
+    <h1>МИНИСТЕРСТВÖ<br>КРАСИВЫХ <span class="plus">✚</span></h1>
+  </div>
+  <div>
+    <div class="meta">
+      <p>Ministry of Beautiful People<br>ММК</p>
+      <p>модное комьюнити<br>у тебя в телефоне</p>
+    </div>
+    <a class="enter" href="#collection"><span>Открыть коллекцию</span><span>→</span></a>
+  </div>
+</section>
+
+<section class="section" id="collection">
+  <div class="kicker">01 / collection</div>
+  <h2>CC 2026<br>T-shirt collection</h2>
+  <div class="grid">
+    <a class="card" href="#black"><div class="num">01 — BLACK / CLASSIC</div><img src="images/black.jpg" alt="Чёрная футболка"></a>
+    <a class="card" href="#white"><div class="num">02 — WHITE / STANDARD</div><img src="images/white.jpg" alt="Белая футболка"></a>
+    <a class="card full" href="#archive"><div class="num">03 — WHITE / OVERSIZE</div><img src="images/hero.jpg" alt="ММК — коллекция футболок"></a>
+  </div>
+</section>
+
+<section class="section" id="black">
+  <div class="kicker">model 01 / black</div>
+  <h2>Black<br>classic</h2>
+  <img src="images/black.jpg" alt="Чёрная футболка ММК">
+  <div class="about">
+    <div class="big">МИНИСТЕРСТВО<br>КРАСИВЫХ ЛЮДЕЙ</div>
+    <p>CC 2026 / department of beautiful people / CREATOR 001</p>
+  </div>
+</section>
+
+<section class="section" id="white">
+  <div class="kicker">model 02 / white</div>
+  <h2>White<br>standard</h2>
+  <img src="images/white.jpg" alt="Белая футболка ММК">
+  <div class="about">
+    <div class="big">ДВЕ ФУТБОЛКИ —<br>ОДНА ИДЕЯ.</div>
+    <p>центральный элемент — язык + звёздный круг / CC 2026</p>
+  </div>
+</section>
+
+<section class="redblock">
+  <div class="kicker">about / ммк</div>
+  <h2>МИНИСТЕРСТВО<br>КРАСИВЫХ ЛЮДЕЙ ⓘ</h2>
+  <p>Ministry of Beautiful People ММК</p>
+  <p>модное комьюнити у тебя в телефоне</p>
+  <p>просветление, свет, стиль @kpacu8o</p>
+  <p>съемки, фотосеты, сниппеты is here</p>
+</section>
+
+<section class="section" id="archive">
+  <div class="kicker">archive / references</div>
+  <h2>Visual<br>language</h2>
+  <div class="editorial">
+    <img src="images/editorial-1.jpg" alt="Fashion reference">
+    <img src="images/editorial-2.jpg" alt="Fashion reference">
+    <img src="images/editorial-3.jpg" alt="Fashion reference">
+    <img src="images/editorial-4.jpg" alt="Fashion reference">
+    <img src="images/editorial-5.jpg" alt="Fashion reference">
+    <img src="images/hero.jpg" alt="ММК moodboard">
+  </div>
+  <div class="marquee"><span>Красота в деталях ✦ CC 2026 ✦ ММК ✦ Ministry of Beautiful People ✦</span></div>
+</section>
+
+<footer class="footer">
+  <strong>МИНИСТЕРСТВÖ КРАСИВЫХ ✚</strong><br><br>
+  сс 2026 by pretty princess T-shirt collection<br>
+  Ministry of Beautiful People / ММК
+</footer>
+</main>
+</body>
+</html>
